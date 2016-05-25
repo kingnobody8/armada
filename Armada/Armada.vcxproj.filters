@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Paker">
+      <UniqueIdentifier>{616370f8-eb22-442c-9705-c89c49e6344a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread Pool">
+      <UniqueIdentifier>{6b698f84-ead2-4372-8c14-9d8a0a318b4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread Pool\Semaphore">
+      <UniqueIdentifier>{feb7fc27-6c48-4fa7-98a7-1010abe385b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread Pool\Worker Thread">
+      <UniqueIdentifier>{245fa055-3141-4cc0-9f0c-1fe3ca5800be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Machine">
+      <UniqueIdentifier>{2b6f6ce7-640c-44d4-b340-6a7c85e8d6f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{d85bb322-d996-40f1-a069-b9cc36a45a48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{698eaf04-dcc8-41bb-bb30-c21a09819f4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDL">
+      <UniqueIdentifier>{9841bcca-73f1-411b-a0e4-8fe5774928f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{7b98a658-09ca-48a7-a64b-5f2dc8eae7ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{952d7f91-623c-4765-86ba-f0c3d8b23dae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{116ada6e-13cb-4ff4-b464-6df8a14b0a13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States">
+      <UniqueIdentifier>{21ae3949-8614-4a14-8109-b9722fe9e2a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Client">
+      <UniqueIdentifier>{76f00e6f-8fe0-4583-9fb4-d957fe49d634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Server">
+      <UniqueIdentifier>{2869b6d4-ef1a-429d-8ccd-d7b8261a34c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation">
+      <UniqueIdentifier>{630f13b9-df18-4b13-8071-a4ef4e91f516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Console Debug">
+      <UniqueIdentifier>{94fe5f2e-e599-4b55-ab55-4f9350cd694a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Text">
+      <UniqueIdentifier>{3f6d762d-ffd3-4c0b-908c-c30b1d2a931a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Board">
+      <UniqueIdentifier>{0ebb5daa-479d-496a-a3aa-9a3c8d6d69fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{3846fb85-33e5-40cc-a33b-e55295684c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{cfa5b8fe-1223-49e3-b07b-45c7f193f677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{04adf800-2cc8-440c-ac0d-4b55dd659f8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\Server States">
+      <UniqueIdentifier>{6e62d003-fb4a-4f56-8c6d-172bd388a7a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Camera\Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\GamePlayState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\IGameState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\IntroState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\MenuState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Input\xbox.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\State_Machine\Machine.cpp">
+      <Filter>Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Paker\Paker.cpp">
+      <Filter>Paker</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Thread_Pool\Semaphore_Work_Done.cpp">
+      <Filter>Thread Pool\Semaphore</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Thread_Pool\Semaphore_Work_Ready.cpp">
+      <Filter>Thread Pool\Semaphore</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\SDL\Sprite.cpp">
+      <Filter>SDL</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util\Types.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Util\XTime.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Entities\EntityManager.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Network\Client.cpp">
+      <Filter>Network\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Network\Server.cpp">
+      <Filter>Network\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Animation\Anime.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Thread_Pool\ThreadPool.cpp">
+      <Filter>Thread Pool</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Network\Network.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Console Debug\ConsoleDebug.cpp">
+      <Filter>Console Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Text\Text.cpp">
+      <Filter>Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Graphics.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Button.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Input\InputCMD.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\RadioButton.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\OptionState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\PreLobbyState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Network\NetMsg.cpp">
+      <Filter>Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\ButtonManager.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\ButtonGroup.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Board\Panel.cpp">
+      <Filter>Board</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Board\Board.cpp">
+      <Filter>Board</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\ForgeState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\ListBox.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Slider.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Audio\Audio.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\OptionsAVState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\State_Machine\Server_Machine.cpp">
+      <Filter>Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\LobbyState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\SetupState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Game\MatchData.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\PopUpState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\PUTimedState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\States\LobbyStateServer.cpp">
+      <Filter>States\Server States</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Camera\Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\States\GamePlayState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\States\IGameState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\States\IntroState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\States\MenuState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Input\Input.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Input\InputCMD.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Input\xbox.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\State_Machine\Machine.h">
+      <Filter>Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Network\Network.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Paker\Paker.h">
+      <Filter>Paker</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Thread_Pool\Semaphore_Work_Done.h">
+      <Filter>Thread Pool\Semaphore</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Thread_Pool\Semaphore_Work_Ready.h">
+      <Filter>Thread Pool\Semaphore</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Thread_Pool\WorkerThread.h">
+      <Filter>Thread Pool\Worker Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Thread_Pool\wt_UpdateInputCMD.h">
+      <Filter>Thread Pool\Worker Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\SDL\Sprite.h">
+      <Filter>SDL</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\Types.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\XTime.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\Defines.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Util\Collision.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\EntityManager.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Entities\Entity.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Network\Client.h">
+      <Filter>Network\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Network\Server.h">
+      <Filter>Network\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Animation\Anime.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Thread_Pool\ThreadPool.h">
+      <Filter>Thread Pool</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Console Debug\ConsoleDebug.h">
+      <Filter>Console Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Text\Text.h">
+      <Filter>Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Text\Word.h">
+      <Filter>Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Text\Rune.h">
+      <Filter>Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\Graphics.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\Button.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\RadioButton.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\States\OptionState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\States\PreLobbyState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Network\NetMsg.h">
+      <Filter>Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\ButtonManager.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\ButtonGroup.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Board\Panel.h">
+      <Filter>Board</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Board\Board.h">
+      <Filter>Board</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\States\ForgeState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\ListBox.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\States\OptionAVState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\Slider.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Audio\Audio.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\State_Machine\Server_Machine.h">
+      <Filter>Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\States\LobbyState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\States\SetupState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Game\MatchData.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\States\PopUpState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\States\PUTimedState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\States\LobbyStateServer.h">
+      <Filter>States\Server States</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

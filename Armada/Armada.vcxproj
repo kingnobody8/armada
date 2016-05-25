@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A9CCB400-68BA-412C-9DEF-DC7D854E80C0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Armada</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>../../api/SDL2_image-2.0.0/include;../../api/SDL2-2.0.3/include;../../api/RakNet/include;../../api/Fmod/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../SDL2-2.0.3/lib/x86;../../SDL2_image-2.0.0/lib/x86;../../api/RakNet/lib;../../api/Fmod/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>../../api/SDL2_image-2.0.0/include;../../api/SDL2-2.0.3/include;../../api/RakNet/include;../../api/Fmod/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../SDL2-2.0.3/lib/x86;../../SDL2_image-2.0.0/lib/x86;../../api/RakNet/lib;../../api/Fmod/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINSOCKAPI_;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;ws2_32.lib;fmod_vc.lib;RakNet_VS2008_DLL_Release_Win32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINSOCKAPI_;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;ws2_32.lib;fmod_vc.lib;RakNet_VS2008_DLL_Release_Win32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Animation\Anime.cpp" />
+    <ClCompile Include="Source\Audio\Audio.cpp" />
+    <ClCompile Include="Source\Board\Board.cpp" />
+    <ClCompile Include="Source\Board\Panel.cpp" />
+    <ClCompile Include="Source\Camera\Camera.cpp" />
+    <ClCompile Include="Source\Console Debug\ConsoleDebug.cpp" />
+    <ClCompile Include="Source\Entities\EntityManager.cpp" />
+    <ClCompile Include="Source\Game\MatchData.cpp" />
+    <ClCompile Include="Source\Graphics\Button.cpp" />
+    <ClCompile Include="Source\Graphics\ButtonGroup.cpp" />
+    <ClCompile Include="Source\Graphics\ButtonManager.cpp" />
+    <ClCompile Include="Source\Graphics\Graphics.cpp" />
+    <ClCompile Include="Source\Graphics\ListBox.cpp" />
+    <ClCompile Include="Source\Graphics\RadioButton.cpp" />
+    <ClCompile Include="Source\Graphics\Slider.cpp" />
+    <ClCompile Include="Source\Input\InputCMD.cpp" />
+    <ClCompile Include="Source\Input\xbox.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\Network\Client.cpp" />
+    <ClCompile Include="Source\Network\NetMsg.cpp" />
+    <ClCompile Include="Source\Network\Network.cpp" />
+    <ClCompile Include="Source\Network\Server.cpp" />
+    <ClCompile Include="Source\Paker\Paker.cpp" />
+    <ClCompile Include="Source\SDL\Sprite.cpp" />
+    <ClCompile Include="Source\States\ForgeState.cpp" />
+    <ClCompile Include="Source\States\GamePlayState.cpp" />
+    <ClCompile Include="Source\States\IGameState.cpp" />
+    <ClCompile Include="Source\States\IntroState.cpp" />
+    <ClCompile Include="Source\States\LobbyState.cpp" />
+    <ClCompile Include="Source\States\LobbyStateServer.cpp" />
+    <ClCompile Include="Source\States\MenuState.cpp" />
+    <ClCompile Include="Source\States\OptionsAVState.cpp" />
+    <ClCompile Include="Source\States\OptionState.cpp" />
+    <ClCompile Include="Source\States\PopUpState.cpp" />
+    <ClCompile Include="Source\States\PreLobbyState.cpp" />
+    <ClCompile Include="Source\States\PUTimedState.cpp" />
+    <ClCompile Include="Source\States\SetupState.cpp" />
+    <ClCompile Include="Source\State_Machine\Machine.cpp" />
+    <ClCompile Include="Source\State_Machine\Server_Machine.cpp" />
+    <ClCompile Include="Source\Text\Text.cpp" />
+    <ClCompile Include="Source\Thread_Pool\Semaphore_Work_Done.cpp" />
+    <ClCompile Include="Source\Thread_Pool\Semaphore_Work_Ready.cpp" />
+    <ClCompile Include="Source\Thread_Pool\ThreadPool.cpp" />
+    <ClCompile Include="Source\Util\Types.cpp" />
+    <ClCompile Include="Source\Util\XTime.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Animation\Anime.h" />
+    <ClInclude Include="Source\Audio\Audio.h" />
+    <ClInclude Include="Source\Board\Board.h" />
+    <ClInclude Include="Source\Board\Panel.h" />
+    <ClInclude Include="Source\Camera\Camera.h" />
+    <ClInclude Include="Source\Console Debug\ConsoleDebug.h" />
+    <ClInclude Include="Source\Entities\Entity.h" />
+    <ClInclude Include="Source\Entities\EntityManager.h" />
+    <ClInclude Include="Source\Game\MatchData.h" />
+    <ClInclude Include="Source\Graphics\Button.h" />
+    <ClInclude Include="Source\Graphics\ButtonGroup.h" />
+    <ClInclude Include="Source\Graphics\ButtonManager.h" />
+    <ClInclude Include="Source\Graphics\Graphics.h" />
+    <ClInclude Include="Source\Graphics\ListBox.h" />
+    <ClInclude Include="Source\Graphics\RadioButton.h" />
+    <ClInclude Include="Source\Graphics\Slider.h" />
+    <ClInclude Include="Source\Input\Input.h" />
+    <ClInclude Include="Source\Input\InputCMD.h" />
+    <ClInclude Include="Source\Input\xbox.h" />
+    <ClInclude Include="Source\Network\Client.h" />
+    <ClInclude Include="Source\Network\NetMsg.h" />
+    <ClInclude Include="Source\Network\Network.h" />
+    <ClInclude Include="Source\Network\Server.h" />
+    <ClInclude Include="Source\Paker\Paker.h" />
+    <ClInclude Include="Source\SDL\Sprite.h" />
+    <ClInclude Include="Source\States\ForgeState.h" />
+    <ClInclude Include="Source\States\GamePlayState.h" />
+    <ClInclude Include="Source\States\IGameState.h" />
+    <ClInclude Include="Source\States\IntroState.h" />
+    <ClInclude Include="Source\States\LobbyState.h" />
+    <ClInclude Include="Source\States\LobbyStateServer.h" />
+    <ClInclude Include="Source\States\MenuState.h" />
+    <ClInclude Include="Source\States\OptionAVState.h" />
+    <ClInclude Include="Source\States\OptionState.h" />
+    <ClInclude Include="Source\States\PopUpState.h" />
+    <ClInclude Include="Source\States\PreLobbyState.h" />
+    <ClInclude Include="Source\States\PUTimedState.h" />
+    <ClInclude Include="Source\States\SetupState.h" />
+    <ClInclude Include="Source\State_Machine\Machine.h" />
+    <ClInclude Include="Source\State_Machine\Server_Machine.h" />
+    <ClInclude Include="Source\Text\Rune.h" />
+    <ClInclude Include="Source\Text\Text.h" />
+    <ClInclude Include="Source\Text\Word.h" />
+    <ClInclude Include="Source\Thread_Pool\Semaphore_Work_Done.h" />
+    <ClInclude Include="Source\Thread_Pool\Semaphore_Work_Ready.h" />
+    <ClInclude Include="Source\Thread_Pool\ThreadPool.h" />
+    <ClInclude Include="Source\Thread_Pool\WorkerThread.h" />
+    <ClInclude Include="Source\Thread_Pool\wt_UpdateInputCMD.h" />
+    <ClInclude Include="Source\Util\Collision.h" />
+    <ClInclude Include="Source\Util\Defines.h" />
+    <ClInclude Include="Source\Util\Types.h" />
+    <ClInclude Include="Source\Util\XTime.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
